@@ -65,7 +65,7 @@ public class UrlChecker implements BatchExtension {
 
 
 
-  private static boolean isSupported3(String url) {
+  public static boolean isSupported3(String url) {
     for (SupportedScm scm : SupportedScm.values()) {
       if (scm.getType().equals(ScmUrlUtils.getProvider(url))) {
         return true;
